@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+
+    /* Primary Colors */
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral Colors */
+    --darkBlueMainBG: hsl(217, 54%, 11%);
+    --darkBlueCardBG: hsl(216, 50%, 16%);
+    --darkBlueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    --mainFont: 'Outfit', sans-serif;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--darkBlueMainBG);
+    font-family: var(--mainFont);
+}
+
+
+/* CODE START */
+
+
+.main {
+    padding: 25px 0;
+    margin: 25px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 25px;
+    width: 325px;
+    height: 542px;
+    overflow: hidden;
+    border-radius: 18px;
+    background-color: var(--darkBlueCardBG);
+}
+
+.card .info-top {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card .info-top #img-equilibrium {
+    width: 278px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card .info-top #title {
+    margin: 30px 0 18px 0;
+    color: var(--white);
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.card .info-top #info-top__paragraph {
+    color: #97afd1;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+
+.info-left {
+    display: flex;
+}
+
+.info-left #info-left_paragraph {
+    width: 100px;
+    color: var(--cyan);
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.info-right #info-right_paragraph {
+    color: #97afd1;
+    margin: 0 5px;
+    font-weight: 300;
+}
+
+.info-right {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #97afd1;
+    padding: 12px 0 0 0;
+    font-weight: 300;
+}
+
+.footer #footer-img {
+    width: 33px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin: 0 15px 0 0;
+}
+
+.footer #footer-paragraph {
+    color: #97afd1;
+}
+
+.footer #footer-span {
+    color: var(--white);
+}
