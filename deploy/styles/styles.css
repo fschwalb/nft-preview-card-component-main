@@ -131,3 +131,52 @@ body h2 {
 .footer #footer-span {
     color: var(--white);
 }
+
+
+
+/* Media Queries */
+
+@media (max-width: 1440px) {
+
+    .card {
+        min-width: 348px;
+        height: 570px;
+    }
+
+    .card .info-top #img-equilibrium {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .footer #footer-img {
+        margin: 5px 15px 0 0;
+    }
+    
+}
+
+@media (max-width: 375px) {
+
+    .card {
+        min-width: 325px;
+    }
+
+    .card .info-top #img-equilibrium {
+        width: 100%;
+    }
+
+    .info-left #info-left_paragraph {
+        width: 80px;
+    }
+
+    
+}
+
+
+
+/* CODE END */
+
+
+
+
+
